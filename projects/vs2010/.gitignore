@@ -1,6 +1,7 @@
 #################################
 # Visual Studio Generated Files #
 #################################
+bin/*
 obj/*
 ipch/*
 *.suo

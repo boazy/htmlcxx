@@ -20,42 +20,45 @@
  * Copyright 2011 David Hoerl
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
-#ifndef __HTML_PARSER_DOM_H__
-#define __HTML_PARSER_DOM_H__
+#include <cstring>
+#include <htmlcxx/Extensions.h>
 
-#include "ParserSax.h"
-#include "tree.h"
+using namespace std;
+using namespace htmlcxx;
 
-namespace htmlcxx
+Extensions::Extensions(const string &exts)
 {
-	namespace HTML
+	const char *begin = exts.c_str();
+	while (*begin)
 	{
-		class ParserDom : public ParserSax
-		{
-			public:
-				ParserDom() {}
-				~ParserDom() {}
+		while (*begin == ' ') ++begin;
+		if (*begin == 0) break;
 
-				const tree<Node> &parseTree(const std::string &html);
-				const tree<Node> &getTree()
-				{ return mHtmlTree; }
+		const char *end = begin + 1;
+		while (*end && *end != ' ') ++end;
 
-			protected:
-				virtual void beginParsing();
+		insert(ci_string(begin, end));
 
-				virtual void foundTag(Node node, bool isEnd);
-				virtual void foundText(Node node);
-				virtual void foundComment(Node node);
+		begin = end;
+	}
+}
 
-				virtual void endParsing();
-				
-				tree<Node> mHtmlTree;
-				tree<Node>::iterator mCurrentState;
-		};
-#ifdef DEBUG
-		std::ostream &operator<<(std::ostream &stream, const tree<HTML::Node> &tr);
-#endif
-	} //namespace HTML
-} //namespace htmlcxx
+bool Extensions::check(const string &url)
+{
+	const char *slash;
+	const char *dot;
+	const char *question;
 
-#endif
+	question = strchr(url.c_str(), '?');
+
+	if (question) return false;
+	
+	slash = strrchr(url.c_str(), '/');
+	dot = strrchr(url.c_str(), '.');
+
+	if (slash >= dot) return false;
+	
+	ci_string ext(dot);
+	
+	return mExts.find(ext) != mExts.end();
+}

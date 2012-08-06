@@ -26,9 +26,9 @@
 #include <iostream>
 #include <fstream>
 #include "CharsetConverter.h"
-#include "Uri.h"
-#include "ParserDom.h"
-#include "utils.h"
+#include <htmlcxx/Uri.h>
+#include <htmlcxx/ParserDom.h>
+#include <htmlcxx/utils.h>
 
 using namespace std;
 using namespace htmlcxx;
@@ -253,8 +253,8 @@ int main(int argc, char **argv) {
 	myassert(ht.parse());
 	myassert(ht.string_manip());
 
-	ifstream f(argv[1]);
 	HTML::ParserSax parser;
+//	ifstream f(argv[1]);
 //	parser.parse(istreambuf_iterator<char>(f), istreambuf_iterator<char>());
 //	tree<HTML::Node> t = parser.getTree();
 //	cerr << t << endl;

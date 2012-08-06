@@ -20,8 +20,9 @@
  * Copyright 2011 David Hoerl
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
-#include "ParserDom.h"
+#include <htmlcxx/ParserDom.h>
 
+#include "win_cstring.h"
 #include <iostream>
 #include <vector>
 
@@ -145,7 +146,6 @@ void ParserDom::foundTag(Node node, bool isEnd)
 	}
 }
 
-#ifdef DEBUG
 ostream &HTML::operator<<(ostream &stream, const tree<HTML::Node> &tr) 
 {
 
@@ -170,4 +170,3 @@ ostream &HTML::operator<<(ostream &stream, const tree<HTML::Node> &tr)
 	stream << "-----" << endl;
 	return stream;
 }
-#endif

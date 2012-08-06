@@ -20,11 +20,11 @@
  * Copyright 2011 David Hoerl
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
-#include "wincstring.h"
+#include "win_cstring.h"
 #include <iostream>
 #include <cctype>
 #include <algorithm>
-#include "Node.h"
+#include <htmlcxx/Node.h>
 
 //#define DEBUG
 #include "debug.h"

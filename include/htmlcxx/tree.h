@@ -25,10 +25,9 @@
 */
 
 
-#ifndef tree_hh_
-#define tree_hh_
+#ifndef htmlcxx_tree_hh_
+#define htmlcxx_tree_hh_
 
-#include "wincstring.h"
 #include <cassert>
 #include <memory>
 #include <stdexcept>
@@ -38,6 +37,8 @@
 #include <algorithm>
 #include <cstddef>
 
+namespace htmlcxx
+{
 
 /// A node in the tree, combining links to other nodes as well as the actual data.
 template<class T>
@@ -2780,8 +2781,6 @@ typename tree<T, tree_node_allocator>::leaf_iterator& tree<T, tree_node_allocato
    return (*this);
    }
 
-#endif
+}
 
-// Local variables:
-// default-tab-width: 3
-// End:
+#endif

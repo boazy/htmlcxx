@@ -20,6 +20,7 @@
  * Copyright 2011 David Hoerl
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
+#include "../../src/win_cstring.h"
 #include <iconv.h>
 #include <cstdio>
 #include <cstring>
@@ -29,15 +30,15 @@
 using namespace std;
 using namespace htmlcxx;
 
-CharsetConverter::CharsetConverter(const string &from, const string &to) throw (Exception)
+CharsetConverter::CharsetConverter(const string &from, const string &to)
 {
 	mIconvDescriptor = iconv_open(to.c_str(), from.c_str());
 	if (mIconvDescriptor == (iconv_t)(-1))
 	{
 		const char *error_str = strerror(errno);
 		size_t size = strlen(error_str) + from.length() + to.length() + 26;
-		char error[size];
-		snprintf(error, size, "Can't convert from %s to %s: %s", from.c_str(), to.c_str(), error_str);
+		std::string error(size, '\0');
+		snprintf(&error[0], size, "Can't convert from %s to %s: %s", from.c_str(), to.c_str(), error_str);
 		throw Exception(error);
 	}
 }
@@ -59,7 +60,7 @@ string CharsetConverter::convert(const string &input)
 
 	size_t ret;
 	while (1) {
-		ret = iconv(mIconvDescriptor, const_cast<char**>(&inbuf), &inbytesleft, &outbuf, &outbytesleft);
+		ret = iconv(mIconvDescriptor, &inbuf, &inbytesleft, &outbuf, &outbytesleft);
 		if (ret == 0) break;
 		if (ret == (size_t)-1 && errno == E2BIG) return string();
 
