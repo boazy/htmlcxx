@@ -22,6 +22,8 @@
 
 #include "Uri.h"
 
+#include "wincstring.h"
+
 #include <cstdlib>
 #include <cassert>
 #include "tld.h"
@@ -579,8 +581,8 @@ std::string Uri::encode(const std::string &uri)
 	{
 		if (!safe[*ptr]) 
 		{
-			char buf[5];
-			memset(buf, 0, 5);
+			char buf[6];
+			memset(buf, 0, 6);
 			snprintf(buf, 5, "%%%X", (*ptr));
 			ret.append(buf); 	
 		}

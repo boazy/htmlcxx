@@ -28,6 +28,7 @@
 #ifndef tree_hh_
 #define tree_hh_
 
+#include "wincstring.h"
 #include <cassert>
 #include <memory>
 #include <stdexcept>

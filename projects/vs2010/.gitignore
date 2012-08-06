@@ -1,0 +1,9 @@
+#################################
+# Visual Studio Generated Files #
+#################################
+obj/*
+ipch/*
+*.suo
+*.sdf
+*.opensdf
+*.vcxproj.user

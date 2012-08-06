@@ -20,6 +20,7 @@
  * Copyright 2011 David Hoerl
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
+#include "wincstring.h"
 #include <iostream>
 #include <cctype>
 #include <algorithm>

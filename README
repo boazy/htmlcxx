@@ -1,8 +1,8 @@
 This files in this project were taken from http://htmlcxx.sourceforge.net/ and modified:
 
-- a proper header with license information is provided for all files (LGLP and two Apache)
-- the LGLP and Apache licenses are included
-- tree.h was given an updated license its autho , making it LGLP when used with this project
+- a proper header with license information is provided for all files (LGPL and two Apache)
+- the LGPL and Apache licenses are included
+- tree.h was given an updated license its autho , making it LGPL when used with this project
 - strstream code was modified to use the new stringstream class, removing deprecated warnings
 - several warnings related to 64-32 bit conversions were fixed
 - the Perl script was modified to use unsigned ints, and the list of domains had the BR specific URLs pruned.
