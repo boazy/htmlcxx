@@ -26,10 +26,11 @@
 #include <map>
 #include <string>
 #include <utility>
+#include <htmlcxx/DllApi.h>
 
 namespace htmlcxx {
 	namespace HTML {
-		class Node {
+		class HTMLCXX_API Node {
 
 			public:
 				Node() {}

@@ -25,11 +25,12 @@
 
 #include <set>
 #include <string>
-#include "ci_string.h"
+#include <htmlcxx/DllApi.h>
+#include <htmlcxx/ci_string.h>
 
 namespace htmlcxx
 {
-	class Extensions
+	class HTMLCXX_API Extensions
 	{
 		public:
 			Extensions() {}

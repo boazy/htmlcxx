@@ -30,7 +30,7 @@ namespace htmlcxx
 {
 	namespace HTML
 	{
-		class ParserDom : public ParserSax
+		class HTMLCXX_API ParserDom : public ParserSax
 		{
 			public:
 				ParserDom() {}
@@ -53,7 +53,7 @@ namespace htmlcxx
 				tree<Node>::iterator mCurrentState;
 		};
 
-		std::ostream &operator<<(std::ostream &stream, const tree<HTML::Node> &tr);
+		HTMLCXX_API std::ostream &operator<<(std::ostream &stream, const tree<HTML::Node> &tr);
 	} //namespace HTML
 } //namespace htmlcxx
 

@@ -57,6 +57,9 @@
     <ClInclude Include="..\..\src\win_cstring.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\include\htmlcxx\DllApi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\src\Extensions.cc">

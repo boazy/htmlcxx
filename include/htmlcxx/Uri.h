@@ -26,10 +26,11 @@
 #include <string>
 #include <climits>
 #include <stdexcept>
+#include <htmlcxx/DllApi.h>
 
 namespace htmlcxx
 {
-	class Uri
+	class HTMLCXX_API Uri
 	{
 		public:
 

@@ -31,7 +31,7 @@ namespace htmlcxx
 {
 	namespace HTML
 	{
-		class ParserSax
+		class HTMLCXX_API ParserSax
 		{
 			public:
 				ParserSax() : mpLiteral(0), mCdata(false) {}
