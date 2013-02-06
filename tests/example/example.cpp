@@ -27,7 +27,7 @@ if (it->isTag() && strcasecasecmp(it->tagName(), "javascript") == 0) continue;
 #include <iostream>
 
 #include "../../src/debug.h"
-#include <htmlcxx/ParserDom.h>
+#include <htmlcxx/html/ParserDom.h>
 
 using namespace std;
 using namespace htmlcxx;

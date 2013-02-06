@@ -20,7 +20,7 @@
  * Copyright 2011 David Hoerl
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
-#include <htmlcxx/Uri.h>
+#include <htmlcxx/html/Uri.h>
 #include <cstdlib>
 #include <getopt.h>
 #include <string>
@@ -31,7 +31,7 @@ using namespace htmlcxx;
 
 
 //#define DEBUG
-#include "../src/debug.h"
+#include "../src/html/debug.h"
 
 void usage(const char *prg);
 

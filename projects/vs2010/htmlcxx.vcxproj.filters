@@ -16,68 +16,68 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\README" />
-    <None Include="..\..\include\htmlcxx\ParserSax.tcc">
+    <None Include="..\..\include\htmlcxx\html\ParserSax.tcc">
       <Filter>Header Files</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\include\htmlcxx\ci_string.h">
+    <ClInclude Include="..\..\include\htmlcxx\html\ci_string.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\htmlcxx\Extensions.h">
+    <ClInclude Include="..\..\include\htmlcxx\html\DllApi.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\htmlcxx\Node.h">
+    <ClInclude Include="..\..\include\htmlcxx\html\Extensions.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\htmlcxx\ParserDom.h">
+    <ClInclude Include="..\..\include\htmlcxx\html\Node.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\htmlcxx\ParserSax.h">
+    <ClInclude Include="..\..\include\htmlcxx\html\ParserDom.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\htmlcxx\tree.h">
+    <ClInclude Include="..\..\include\htmlcxx\html\ParserSax.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\htmlcxx\Uri.h">
+    <ClInclude Include="..\..\include\htmlcxx\html\tree.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\htmlcxx\utils.h">
+    <ClInclude Include="..\..\include\htmlcxx\html\Uri.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\src\debug.h">
+    <ClInclude Include="..\..\include\htmlcxx\html\utils.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\src\profile.h">
+    <ClInclude Include="..\..\src\html\debug.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\src\tld.h">
+    <ClInclude Include="..\..\src\html\profile.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\src\win_cstring.h">
+    <ClInclude Include="..\..\src\html\tld.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\htmlcxx\DllApi.h">
+    <ClInclude Include="..\..\src\html\win_cstring.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\src\Extensions.cc">
+    <ClCompile Include="..\..\src\html\Extensions.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\Node.cc">
+    <ClCompile Include="..\..\src\html\Node.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\ParserDom.cc">
+    <ClCompile Include="..\..\src\html\ParserDom.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\ParserSax.cc">
+    <ClCompile Include="..\..\src\html\ParserSax.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\Uri.cc">
+    <ClCompile Include="..\..\src\html\Uri.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\utils.cc">
+    <ClCompile Include="..\..\src\html\utils.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

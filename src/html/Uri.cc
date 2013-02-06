@@ -20,7 +20,7 @@
  * Copyright 2011 David Hoerl
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
-#include <htmlcxx/Uri.h>
+#include <htmlcxx/html/Uri.h>
 
 #include "win_cstring.h"
 

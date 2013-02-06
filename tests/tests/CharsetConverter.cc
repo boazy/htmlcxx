@@ -20,7 +20,7 @@
  * Copyright 2011 David Hoerl
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
-#include "../../src/win_cstring.h"
+#include "../../src/html/win_cstring.h"
 #include <iconv.h>
 #include <cstdio>
 #include <cstring>

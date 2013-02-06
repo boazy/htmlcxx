@@ -26,7 +26,7 @@
 #include <string>
 #include <climits>
 #include <stdexcept>
-#include <htmlcxx/DllApi.h>
+#include <htmlcxx/html/DllApi.h>
 
 namespace htmlcxx
 {

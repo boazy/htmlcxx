@@ -20,7 +20,7 @@
  * Copyright 2011 David Hoerl
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
-#include <htmlcxx/ParserDom.h>
+#include <htmlcxx/html/ParserDom.h>
 
 #include "win_cstring.h"
 #include <iostream>

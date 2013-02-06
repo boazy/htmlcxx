@@ -24,7 +24,7 @@
 #include <iostream>
 #include <cctype>
 #include <algorithm>
-#include <htmlcxx/Node.h>
+#include <htmlcxx/html/Node.h>
 
 //#define DEBUG
 #include "debug.h"

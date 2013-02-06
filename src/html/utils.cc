@@ -25,8 +25,8 @@
 #include <cstring>
 #include <sstream>
 
-#include <htmlcxx/Uri.h>
-#include <htmlcxx/utils.h>
+#include <htmlcxx/html/Uri.h>
+#include <htmlcxx/html/utils.h>
 
 using namespace std;
 namespace htmlcxx {

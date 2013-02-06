@@ -26,7 +26,7 @@
 #include <map>
 #include <string>
 #include <utility>
-#include <htmlcxx/DllApi.h>
+#include <htmlcxx/html/DllApi.h>
 
 namespace htmlcxx {
 	namespace HTML {

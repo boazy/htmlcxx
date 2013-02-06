@@ -35,31 +35,31 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\..\include\htmlcxx\ParserSax.tcc" />
+    <None Include="..\..\include\htmlcxx\html\ParserSax.tcc" />
     <None Include="..\..\README" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\include\htmlcxx\ci_string.h" />
-    <ClInclude Include="..\..\include\htmlcxx\DllApi.h" />
-    <ClInclude Include="..\..\include\htmlcxx\Extensions.h" />
-    <ClInclude Include="..\..\include\htmlcxx\Node.h" />
-    <ClInclude Include="..\..\include\htmlcxx\ParserDom.h" />
-    <ClInclude Include="..\..\include\htmlcxx\ParserSax.h" />
-    <ClInclude Include="..\..\include\htmlcxx\tree.h" />
-    <ClInclude Include="..\..\include\htmlcxx\Uri.h" />
-    <ClInclude Include="..\..\include\htmlcxx\utils.h" />
-    <ClInclude Include="..\..\src\debug.h" />
-    <ClInclude Include="..\..\src\profile.h" />
-    <ClInclude Include="..\..\src\tld.h" />
-    <ClInclude Include="..\..\src\win_cstring.h" />
+    <ClInclude Include="..\..\include\htmlcxx\html\ci_string.h" />
+    <ClInclude Include="..\..\include\htmlcxx\html\DllApi.h" />
+    <ClInclude Include="..\..\include\htmlcxx\html\Extensions.h" />
+    <ClInclude Include="..\..\include\htmlcxx\html\Node.h" />
+    <ClInclude Include="..\..\include\htmlcxx\html\ParserDom.h" />
+    <ClInclude Include="..\..\include\htmlcxx\html\ParserSax.h" />
+    <ClInclude Include="..\..\include\htmlcxx\html\tree.h" />
+    <ClInclude Include="..\..\include\htmlcxx\html\Uri.h" />
+    <ClInclude Include="..\..\include\htmlcxx\html\utils.h" />
+    <ClInclude Include="..\..\src\html\debug.h" />
+    <ClInclude Include="..\..\src\html\profile.h" />
+    <ClInclude Include="..\..\src\html\tld.h" />
+    <ClInclude Include="..\..\src\html\win_cstring.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\src\Extensions.cc" />
-    <ClCompile Include="..\..\src\Node.cc" />
-    <ClCompile Include="..\..\src\ParserDom.cc" />
-    <ClCompile Include="..\..\src\ParserSax.cc" />
-    <ClCompile Include="..\..\src\Uri.cc" />
-    <ClCompile Include="..\..\src\utils.cc" />
+    <ClCompile Include="..\..\src\html\Extensions.cc" />
+    <ClCompile Include="..\..\src\html\Node.cc" />
+    <ClCompile Include="..\..\src\html\ParserDom.cc" />
+    <ClCompile Include="..\..\src\html\ParserSax.cc" />
+    <ClCompile Include="..\..\src\html\Uri.cc" />
+    <ClCompile Include="..\..\src\html\utils.cc" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{0DC0D7C3-C13A-4743-807D-C2429B4EE396}</ProjectGuid>
@@ -149,7 +149,7 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;HTMLCXX_LIB;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\..\include</AdditionalIncludeDirectories>
       <ProgramDataBaseFileName>$(OutDir)$(ProjectName)-vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
     </ClCompile>
@@ -179,7 +179,7 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;HTMLCXX_LIB;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\..\include</AdditionalIncludeDirectories>
       <ProgramDataBaseFileName>$(OutDir)$(ProjectName)-vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
     </ClCompile>
@@ -211,7 +211,7 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;HTMLCXX_LIB;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\..\include</AdditionalIncludeDirectories>
       <ProgramDataBaseFileName>$(OutDir)$(ProjectName)-vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
     </ClCompile>
@@ -249,7 +249,7 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;HTMLCXX_LIB;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\..\include</AdditionalIncludeDirectories>
       <ProgramDataBaseFileName>$(OutDir)$(ProjectName)-vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
     </ClCompile>

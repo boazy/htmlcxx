@@ -26,9 +26,9 @@
 #include <iostream>
 #include <fstream>
 #include "CharsetConverter.h"
-#include <htmlcxx/Uri.h>
-#include <htmlcxx/ParserDom.h>
-#include <htmlcxx/utils.h>
+#include <htmlcxx/html/Uri.h>
+#include <htmlcxx/html/ParserDom.h>
+#include <htmlcxx/html/utils.h>
 
 using namespace std;
 using namespace htmlcxx;

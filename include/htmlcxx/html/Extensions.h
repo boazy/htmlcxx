@@ -25,8 +25,8 @@
 
 #include <set>
 #include <string>
-#include <htmlcxx/DllApi.h>
-#include <htmlcxx/ci_string.h>
+#include <htmlcxx/html/DllApi.h>
+#include <htmlcxx/html/ci_string.h>
 
 namespace htmlcxx
 {
