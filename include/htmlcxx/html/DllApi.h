@@ -4,7 +4,7 @@
 // that uses this DLL. This way any other project whose source files include this file see 
 // HTMLCXX_API functions as being imported from a DLL, whereas this DLL sees symbols
 // defined with this macro as being exported.
-#if defined(HTMLCXX_LIB) || !defined(WIN32)
+#if defined(HTMLCXX_LIB) || !defined(_WIN32)
 #  define HTMLCXX_API
 #elif defined(HTMLCXX_EXPORTS)
 #  define HTMLCXX_API __declspec(dllexport)
