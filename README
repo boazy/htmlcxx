@@ -6,8 +6,7 @@ This files in this project were taken from http://htmlcxx.sourceforge.net/ and m
 - strstream code was modified to use the new stringstream class, removing deprecated warnings
 - several warnings related to 64-32 bit conversions were fixed
 - the Perl script was modified to use unsigned ints, and the list of domains had the BR specific URLs pruned.
-
-The code here is designed to be incorporated directly in your Mac or iOS project and not as a library.
+- reintroduced support for Windows (Visual Studio 2010 solution) and Linux (autotools)
 
 Three targets are provided for testing:
 - htmlcxx, which runs the bit of test code shown on the sourceforge page 
